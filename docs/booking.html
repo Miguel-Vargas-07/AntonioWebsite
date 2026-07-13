@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now — Antonio's Barbershop</title>
+<meta name="description" content="Preview open times and request your appointment at Antonio's Barbershop.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ccircle cx='50' cy='50' r='28' fill='none' stroke='%23a9822f' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+      ANTONIO'S
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="haircuts.html">Haircuts</a></li>
+      <li><a href="prices.html">Prices &amp; Details</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-question" data-open-question type="button">Have a Question?</button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="section-tight">
+    <div class="container section-head">
+      <div class="eyebrow" style="justify-content:center;">Step 3 of 3 — Book Now</div>
+      <h1>Grab a chair</h1>
+      <p>Preview open days and times below, then send a quick message to
+        confirm — Antonio replies personally.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="booking-shell">
+
+        <div class="calendar">
+          <div class="calendar-head">
+            <button type="button" aria-label="Previous month" disabled style="opacity:.35;cursor:not-allowed;">‹</button>
+            <h3 style="margin:0;">July 2026</h3>
+            <button type="button" aria-label="Next month" disabled style="opacity:.35;cursor:not-allowed;">›</button>
+          </div>
+          <div class="calendar-grid">
+            <div class="dow">Sun</div><div class="dow">Mon</div><div class="dow">Tue</div>
+            <div class="dow">Wed</div><div class="dow">Thu</div><div class="dow">Fri</div><div class="dow">Sat</div>
+
+            <div class="day-cell empty"></div>
+            <div class="day-cell empty"></div>
+            <div class="day-cell empty"></div>
+            <div class="day-cell">1</div>
+            <div class="day-cell">2</div>
+            <div class="day-cell">3</div>
+            <div class="day-cell">4</div>
+
+            <div class="day-cell">5</div>
+            <div class="day-cell">6</div>
+            <div class="day-cell">7</div>
+            <div class="day-cell">8</div>
+            <div class="day-cell">9</div>
+            <div class="day-cell">10</div>
+            <div class="day-cell">11</div>
+
+            <div class="day-cell">12</div>
+            <div class="day-cell" style="border:1px solid var(--gold);">13</div>
+            <div class="day-cell available" data-label="Tue Jul 14">14</div>
+            <div class="day-cell available" data-label="Wed Jul 15">15</div>
+            <div class="day-cell available" data-label="Thu Jul 16">16</div>
+            <div class="day-cell available" data-label="Fri Jul 17">17</div>
+            <div class="day-cell available" data-label="Sat Jul 18">18</div>
+
+            <div class="day-cell">19</div>
+            <div class="day-cell">20</div>
+            <div class="day-cell available" data-label="Tue Jul 21">21</div>
+            <div class="day-cell available" data-label="Wed Jul 22">22</div>
+            <div class="day-cell available" data-label="Thu Jul 23">23</div>
+            <div class="day-cell available" data-label="Fri Jul 24">24</div>
+            <div class="day-cell available" data-label="Sat Jul 25">25</div>
+
+            <div class="day-cell">26</div>
+            <div class="day-cell">27</div>
+            <div class="day-cell available" data-label="Tue Jul 28">28</div>
+            <div class="day-cell available" data-label="Wed Jul 29">29</div>
+            <div class="day-cell available" data-label="Thu Jul 30">30</div>
+            <div class="day-cell available" data-label="Fri Jul 31">31</div>
+            <div class="day-cell empty"></div>
+          </div>
+          <p style="font-size:.82rem; margin:16px 0 0;">
+            <span style="color:var(--gold);">●</span> Gold outline = today &nbsp;·&nbsp;
+            Highlighted = open for booking &nbsp;·&nbsp; Closed Sun &amp; Mon
+          </p>
+        </div>
+
+        <div class="slots">
+          <h3 style="margin-bottom:4px;">Available Times</h3>
+          <p style="margin-top:0;">Pick a day on the calendar, then a time below.</p>
+          <div class="slot-grid">
+            <div class="slot">10:00 AM</div>
+            <div class="slot">11:00 AM</div>
+            <div class="slot taken">12:00 PM</div>
+            <div class="slot">1:00 PM</div>
+            <div class="slot taken">2:00 PM</div>
+            <div class="slot">3:00 PM</div>
+            <div class="slot">4:00 PM</div>
+            <div class="slot">5:00 PM</div>
+            <div class="slot">6:00 PM</div>
+          </div>
+
+          <div class="booking-summary">Pick a day and a time to see it summarized here.</div>
+
+          <span class="pending-note" style="margin-top:20px; width:100%; justify-content:center;">Confirm via Instagram DM — link coming soon</span>
+
+          <div class="gcal-note">
+            <span>This calendar is a live preview of typical availability.
+              Antonio's real schedule runs on Google Calendar — synced
+              booking is coming in a future version of this site.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark">A</span>
+          ANTONIO'S
+        </div>
+        <p>A modern barbershop built on classic craft. Fades, lineups,
+          and beard work for people who care how they look.</p>
+        <span class="social-link">Instagram — link coming soon</span>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="haircuts.html">Haircuts</a></li>
+          <li><a href="prices.html">Prices &amp; Details</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+          <li><a href="about.html">About Antonio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio Hours</h4>
+        <ul>
+          <li>Tue – Fri: 10am – 7pm</li>
+          <li>Saturday: 9am – 5pm</li>
+          <li>Sun – Mon: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Antonio's Barbershop. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="question-modal">
+  <div class="modal">
+    <button class="modal-close" data-close-question aria-label="Close">✕</button>
+    <div class="eyebrow" style="justify-content:center;">Have a Question?</div>
+    <h3>Message Antonio directly</h3>
+    <p>The quickest way to ask about a style, a price, or availability
+      will be a direct message on Instagram.</p>
+    <span class="pending-note">Instagram link coming soon</span>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

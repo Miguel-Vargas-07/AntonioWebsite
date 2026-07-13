@@ -1,0 +1,39 @@
+MODIFICATIONS
+
+do not try to host the website anywhere, i will do this on GitHub later, just being able to open it from my files is enough
+
+make the website seem less AI, make it a bit less flashy
+
+keep the pages more simple, and leave the biographys blank
+
+HOME PAGE
+
+remove the stats "years behind the chair, average rating, cuts delivered"
+
+remove the blue and yellow theme and the blue and yellow stripe thingy, use a more deep gold
+
+
+the how it works section is perfect, this style is simple clean, and not to over the top, keep this consistent with all modifications done in this version
+
+
+
+HAIRCUTS PAGE
+
+for each style, make the space for an image at the top of each short box a space for a file upload for real images, give each one a number/ id so that i can later upload a folder of images and tell claude where i want each image to go
+
+
+PRICES AND DETAILS
+
+this is good, make the cancelation/ rescheduling banner more wide similar so it covers a bit more length on the screen and is more visible/ important
+
+
+BOOK NOW
+
+everything is good, like the rest of the pages, if you make a style change make sure it is consistent through ALL pages, not just this one but all
+
+
+ABOUT
+
+remove the blue and yellow stripe banner and create something new, a new design and layout, you have full creative priveledge, keep it simple and sleek though, remember a bit less AI flashy
+
+unlink the current Instagram page, i will instruct you the page to add later 
