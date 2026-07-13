@@ -1,0 +1,17 @@
+Create a modern website for a barber
+
+
+create a page for showing off haircuts, a page for prices and details, and a page for a calendar with bookings (for this I will connect it to google calendar just to serve as context)
+
+if you think the website would benefit from any other pages do that as well
+
+the website should be sleek and modern
+
+it should also be easy for the user to send a message to the barber (this would look like a link to an Instagram page)
+
+The color theme should be primary blue, secondary black, and gold for accents
+
+make the haircut images -> prices and details -> calendar bookings "cycle" easy for the user to go through so they can see what is offered, the details, and how to book, do this by adding a button connecting images to prices and details, and prices and details to calendar page
+
+There should be a "have a question" button on the header where the page buttons live
+
