@@ -1,4 +1,4 @@
-# Antonio's Barbershop — Site v2
+# Antonio's Barbershop — Site v3
 
 A static site (no build step, no backend) in [`docs/`](../docs), built to spec
 from `Instructions/AntonioWebsiteInstructions.txt` and refined per
@@ -25,9 +25,14 @@ one place applies everywhere.
 
 ## Design
 
-Black background with a single deep-gold accent (`--gold: #a9822f`) — no blue,
-no bright yellow, no gradients or glow effects. Kept deliberately plain per
-feedback that the first pass read as "too AI, too flashy."
+Near-black background (cool blue-black undertone, not pure grey) with two
+flat accents: deep gold (`--gold: #a9822f`) for brand/primary actions and a
+muted blue (`--blue: #3d6d99`) for secondary pops — availability states on
+the booking calendar, alternating icons/tags/step numbers, nav hover. No
+bright yellow, no gradients beyond one soft radial tint in the hero, no glow
+effects. Still deliberately plain per earlier feedback that the first pass
+read as "too AI, too flashy" — color was added back in v3 without reversing
+that.
 
 ## Image slots — upload mapping
 

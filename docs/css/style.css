@@ -1,17 +1,20 @@
 /* =========================================================
-   Antonio's Barbershop — v2 stylesheet
-   Palette: black + a single deep-gold accent. Kept deliberately
-   plain — flat fills, no gradients, minimal motion.
+   Antonio's Barbershop — v3 stylesheet
+   Palette: near-black (cool undertone) with two accents — deep
+   gold (brand / primary actions) and a muted blue (availability /
+   secondary pops). Still flat fills, no gradients, minimal motion.
    ========================================================= */
 
 :root {
-  --black: #0a0a0a;
-  --black-soft: #131313;
-  --black-card: #181818;
+  --black: #0a0c10;
+  --black-soft: #12151c;
+  --black-card: #171b24;
   --gold: #a9822f;
   --gold-soft: #c9a457;
+  --blue: #3d6d99;
+  --blue-soft: #6a9dc9;
   --white: #f0eee9;
-  --grey: #9d9a93;
+  --grey: #98a0ab;
 
   --font-display: "Bebas Neue", "Oswald", sans-serif;
   --font-body: "Inter", "Segoe UI", sans-serif;
@@ -182,7 +185,7 @@ p { color: var(--grey); }
   transition: color 0.15s ease, background 0.15s ease;
 }
 
-.nav-links a:hover { color: var(--white); }
+.nav-links a:hover { color: var(--blue-soft); }
 
 .nav-links a.active { color: var(--gold-soft); }
 
@@ -238,6 +241,7 @@ section { padding: 76px 0; }
 .hero {
   padding: 90px 0 70px;
   border-bottom: 1px solid rgba(169, 130, 47, 0.15);
+  background: radial-gradient(ellipse 900px 500px at 15% 0%, rgba(61, 109, 153, 0.16), transparent 60%);
 }
 
 .hero-content { max-width: 640px; }
@@ -267,8 +271,13 @@ section { padding: 76px 0; }
 .cycle-step .num {
   font-family: var(--font-display);
   font-size: 2.6rem;
-  color: rgba(169, 130, 47, 0.45);
+  color: rgba(169, 130, 47, 0.5);
   margin-bottom: 4px;
+}
+
+.cycle-step:nth-of-type(1) .num,
+.cycle-step:nth-of-type(3) .num {
+  color: rgba(61, 109, 153, 0.65);
 }
 
 .cycle-step p { flex-grow: 1; }
@@ -340,6 +349,11 @@ section { padding: 76px 0; }
   margin-bottom: 10px;
 }
 
+.card-tag--blue {
+  color: var(--blue-soft);
+  background: rgba(61, 109, 153, 0.16);
+}
+
 /* ---------- Pricing ---------- */
 .price-table {
   width: 100%;
@@ -378,6 +392,7 @@ section { padding: 76px 0; }
   border-radius: var(--radius);
 }
 .addon-list li span:last-child { color: var(--gold-soft); font-family: var(--font-display); }
+.addon-list li span.check { color: var(--blue-soft); font-family: var(--font-body); font-weight: 600; }
 
 .price-note-wide {
   display: flex;
@@ -460,13 +475,13 @@ section { padding: 76px 0; }
 }
 
 .day-cell.available {
-  background: rgba(169, 130, 47, 0.12);
+  background: rgba(61, 109, 153, 0.18);
   color: var(--white);
   cursor: pointer;
   border: 1px solid transparent;
   transition: border-color .15s ease;
 }
-.day-cell.available:hover { border-color: var(--gold); }
+.day-cell.available:hover { border-color: var(--blue-soft); }
 .day-cell.selected {
   background: var(--gold);
   color: var(--black);
@@ -499,7 +514,7 @@ section { padding: 76px 0; }
   cursor: pointer;
   transition: border-color .15s ease, color .15s ease;
 }
-.slot:hover { border-color: var(--gold); color: var(--white); }
+.slot:hover { border-color: var(--blue-soft); color: var(--white); }
 .slot.selected {
   background: rgba(169, 130, 47, 0.2);
   border-color: var(--gold);
@@ -524,7 +539,8 @@ section { padding: 76px 0; }
   align-items: flex-start;
   font-size: 0.84rem;
   color: var(--grey);
-  background: rgba(255,255,255,0.03);
+  background: rgba(61, 109, 153, 0.08);
+  border-left: 2px solid var(--blue);
   border-radius: var(--radius);
   padding: 14px 16px;
   margin-top: 18px;
